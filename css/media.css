@@ -1,0 +1,259 @@
+/* ==========================================
+   DESKTOP RESPONSIVENESS (1440px & 1170px)
+   ========================================== */
+@media (max-width: 1440px) {
+    .container {
+        padding: 0 80px;
+    }
+}
+
+@media (max-width: 1170px) {
+    .container {
+        padding: 0 40px;
+    }
+    .main__films__cards {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
+/* ==========================================
+   TABLET RESPONSIVENESS (992px)
+   ========================================== */
+@media (max-width: 992px) {
+    .container {
+        padding: 0 20px;
+    }
+    .content__item__title {
+        font-size: 48px;
+    }
+    .content__item__text {
+        font-size: 15px;
+        margin: 20px 0;
+        max-width: 80%;
+    }
+    .window video {
+        width: 100%;
+    }
+    .window__content {
+        background: linear-gradient(90deg, rgba(222, 247, 255, 0.95) 0%, rgba(244, 252, 255, 0.9) 50%, rgba(255, 255, 255, 0.4) 100%);
+    }
+    .collections__cards {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+    .collections__card {
+        max-width: 45%;
+    }
+    .series__content___text {
+        max-width: 100%;
+    }
+    .series__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ==========================================
+   MOBILE RESPONSIVENESS (768px)
+   ========================================== */
+@media (max-width: 768px) {
+    .nav {
+        top: 60px;
+        padding-top: 0;
+    }
+    .navbar {
+        height: 70px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 10;
+        padding: 0;
+        position: relative;
+    }
+    .header-menu__line {
+        width: 24px;
+        height: 2px;
+        background-color: var(--white);
+        display: block;
+        position: relative;
+        transition: 0.3s;
+    }
+    .header-menu__line::before,
+    .header-menu__line::after {
+        content: "";
+        display: block;
+        width: 24px;
+        height: 100%;
+        background-color: var(--white);
+        position: absolute;
+        left: 0;
+        transition: 0.3s;
+    }
+    .header-menu__line::before {
+        top: -8px;
+    }
+    .header-menu__line::after {
+        top: 8px;
+    }
+    .header-menu:focus {
+        box-shadow: 0 0 5px var(--white);
+        outline: none;
+    }
+    .header-menu:not(.collapsed) .header-menu__line::before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+    .header-menu:not(.collapsed) .header-menu__line::after {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+    .header-menu:not(.collapsed) .header-menu__line {
+        background-color: transparent;
+    }
+    .navbar__lists {
+        position: absolute;
+        top: 100%;
+        left: -20px;
+        right: -20px;
+        background: rgba(4, 13, 31, 0.95);
+        backdrop-filter: blur(15px);
+        flex-direction: column;
+        align-items: center;
+        row-gap: 25px;
+        padding: 30px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 2px solid var(--orange);
+        transform: translateY(-150%);
+        transition: 0.5s ease-in-out;
+        z-index: -1;
+        display: flex;
+    }
+    .header-menu:not(.collapsed) ~ .navbar__lists {
+        transform: translateY(0);
+    }
+    .header__link {
+        display: block;
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+    .header__link:hover {
+        border-bottom: none !important;
+        color: var(--orange) !important;
+        padding: 10px 0 !important;
+    }
+    .hero {
+        min-height: auto;
+        padding: 0;
+    }
+    .hero__img {
+        height: 100%;
+    }
+    .header__content {
+        background-color: rgba(7, 15, 25, 0.85);
+        padding: 150px 0 80px;
+    }
+    .content__item__title {
+        font-size: 38px;
+    }
+    .content__item__text {
+        max-width: 100%;
+    }
+    .window video {
+        height: 400px;
+    }
+    .window__content {
+        height: 400px;
+        padding: 30px 0;
+        background: rgba(222, 247, 255, 0.95);
+    }
+    .window__content p {
+        margin: 30px 0;
+        max-width: 100%;
+    }
+    .footer__container {
+        flex-direction: column;
+        row-gap: 20px;
+        text-align: center;
+    }
+}
+
+/* ==========================================
+   SMALL MOBILE RESPONSIVENESS (576px)
+   ========================================== */
+@media (max-width: 576px) {
+    .ads span {
+        font-size: 14px;
+        text-align: center;
+    }
+    .content__item {
+        text-align: center;
+    }
+    .content__item__title {
+        font-size: 32px;
+    }
+    .content__item__text {
+        font-size: 14px;
+    }
+    .content__item__btn {
+        display: inline-block;
+    }
+    .card {
+        max-width: 100%;
+        height: auto;
+    }
+    .card__content {
+        padding: 40px 14px 20px;
+    }
+    .card__content p {
+        text-align: center;
+    }
+    .window video {
+        height: 350px;
+    }
+    .window__content {
+        height: 350px;
+    }
+    .window__content p {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 20px 0;
+    }
+    .collections__card {
+        max-width: 100%;
+    }
+    .series__card-lg {
+        min-height: auto;
+    }
+    .series__card-lg-content {
+        position: relative;
+        padding: 40px 20px;
+        background: rgba(7, 15, 25, 0.9);
+    }
+    .series__content-title {
+        font-size: 28px;
+    }
+    .series__grid {
+        grid-template-columns: 1fr;
+    }
+    .series__card-md, .series__card-sm {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .footer__apps {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+}
