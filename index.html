@@ -4,94 +4,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>vue cinemas</title>
+    <title>Vue Cinemas — Watch Films & Series</title>
+    <link rel="icon" type="image/png" href="./img/logo.png">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/png">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/media.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <div class="ads-haeder-hero">
-        <a href="" class="ads">
-            <i class="fa-solid fa-film fa-3x"></i>
-            <span>See no special offer restrictions</span>
-        </a>
-        <header class="header">
-            <nav class="nav">
-                <div class="container">
-                    <div class="navbar">
-                        <a href="" class="header__logo">
-                            <img src="./img/logo.png" alt="error logo">
-                            <span>CINEMAS</span>
-                        </a>
 
-                        <button class="navbar-toggler header-menu collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="header-menu__line"></span>
-                        </button>
+    <a href="#!" class="ads">
+        <i class="fa-solid fa-film fa-3x"></i>
+        <span>See no special offer restrictions</span>
+    </a>
 
-                        <!-- ul.navbar__lists>li.navbar__list*4>a.header__link -->
-                        <ul class="navbar__lists">
-                            <li class="navbar__list">
-                                <a href="" class="header__link">Films</a>
-                            </li>
-                            <li class="navbar__list">
-                                <a href="" class="header__link">Serials</a>
-                            </li>
-                            <li class="navbar__list">
-                                <a href="" class="header__link">Cartoons</a>
-                            </li>
-                            <li class="navbar__list">
-                                <a href="" class="header__link">Collections</a>
-                            </li>
-                        </ul>
-                    </div>
+    <header class="header">
+        <nav class="nav">
+            <div class="container">
+                <div class="navbar">
+                    <a href="#" class="header__logo">
+                        <img src="./img/logo.png" alt="Vue Cinemas Logo">
+                        <span>CINEMAS</span>
+                    </a>
+
+                    <input type="checkbox" id="menu-toggle" class="header-menu-toggle" aria-label="Toggle navigation menu">
+                    <label for="menu-toggle" class="header-menu" aria-label="Open menu">
+                        <span class="header-menu__line"></span>
+                    </label>
+
+                    <ul class="navbar__lists">
+                        <li class="navbar__list">
+                            <a href="#films" class="header__link">Films</a>
+                        </li>
+                        <li class="navbar__list">
+                            <a href="#series" class="header__link">Serials</a>
+                        </li>
+                        <li class="navbar__list">
+                            <a href="#films" class="header__link">Cartoons</a>
+                        </li>
+                        <li class="navbar__list">
+                            <a href="#collections" class="header__link">Collections</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
+            </div>
+        </nav>
+    </header>
 
-        </header>
-        <div class="hero">
-            <img class="hero__img" src="./img/header-img.png" alt="">
-            <div class="header__content">
-                <div class="container">
-                    <div class="content__item">
-                        <h1 class="content__item__title">Kong: Skull Island</h1>
-                        <p class="content__item__text">The film takes the viewer to the 70s of the last century. The
-                            protagonist organizes an expedition to the Skull island, always covered in fog, on which
-                            King Kong was once caught to find the missing brother and some mysterious substance.
-                            During...</p>
-                        <a class="content__item__btn btn" href="">Watch now</a>
-                    </div>
+    <div class="hero">
+        <img class="hero__img" src="./img/header-img.png" alt="Kong: Skull Island Poster">
+        <div class="header__content">
+            <div class="container">
+                <div class="content__item">
+                    <h1 class="content__item__title">Kong: Skull Island</h1>
+                    <p class="content__item__text">The film takes the viewer to the 70s of the last century. The
+                        protagonist organizes an expedition to the Skull island, always covered in fog, on which
+                        King Kong was once caught to find the missing brother and some mysterious substance.
+                        During...</p>
+                    <a class="content__item__btn btn" href="#films">Watch now</a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Hedaer end -->
+
+    <!-- Main start -->
     <main>
-        <section>
+        <section id="films" class="films-section">
             <div class="container">
                 <div class="main__films">
-                    <h3 class="title">films</h3>
+                    <h3 class="title">Films</h3>
                     <div class="main__films__cards">
-                        <div class="card" href="">
+                        <div class="card">
                             <img class="card__img" src="./img/Black_Panther_film_poster 1.png" alt="Black Panther">
-                            <a class="card__content">
+                            <a href="#!" class="card__content">
                                 <i class="fa-solid fa-play fa-3x"></i>
                                 <span>2:14:33</span>
                                 <h4 class="card__content__title">Black Panther</h4>
                                 <p class="card__content__text">At first glance, you can decide that Wakanda is an
-                                    ordinary te rritory of wild Africa, but this is not so. Here, in the bowels of the
+                                    ordinary territory of wild Africa, but this is not so. Here, in the bowels of the
                                     desert lands, there are hidden deposits of a unique metal capable of absorbing...
                                 </p>
                             </a>
                         </div>
-                        <div class="card" href="">
-                            <img class="card__img" src="./img/Black_Panther_film_poster 2.png" alt="Black Panther">
-                            <a class="card__content">
+                        <div class="card">
+                            <img class="card__img" src="./img/Black_Panther_film_poster 2.png" alt="The Dark Knight">
+                            <a href="#!" class="card__content">
                                 <i class="fa-solid fa-play fa-3x"></i>
                                 <span>2:32:13</span>
                                 <h4 class="card__content__title">The Dark Knight</h4>
@@ -101,27 +101,28 @@
                                 </p>
                             </a>
                         </div>
-                        <div class="card" href="">
-                            <img class="card__img" src="./img/Black_Panther_film_poster 3.png" alt="Black Panther">
-                            <a class="card__content">
+                        <div class="card">
+                            <img class="card__img" src="./img/Black_Panther_film_poster 3.png" alt="The Gentlemen">
+                            <a href="#!" class="card__content">
                                 <i class="fa-solid fa-play fa-3x"></i>
                                 <span>1:53:45</span>
                                 <h4 class="card__content__title">The Gentlemen</h4>
                                 <p class="card__content__text">One cunning American, from his student years, had been
-                                    selling drugs, and now he came up with a scheme of illegal enrichment usin g the
-                                    estates of an impoverished English aristocracy and made a very good fortune on ...
+                                    selling drugs, and now he came up with a scheme of illegal enrichment using the
+                                    estates of an impoverished English aristocracy and made a very good fortune on...
                                 </p>
                             </a>
                         </div>
-                        <div class="card" href="">
-                            <img class="card__img" src="./img/Black_Panther_film_poster 4.png" alt="Black Panther">
-                            <a class="card__content">
+                        <div class="card">
+                            <img class="card__img" src="./img/Black_Panther_film_poster 4.png"
+                                alt="The Lord of the Rings">
+                            <a href="#!" class="card__content">
                                 <i class="fa-solid fa-play fa-3x"></i>
                                 <span>2:58:20</span>
                                 <h4 class="card__content__title">The Lord of the...</h4>
-                                <p class="card__content__text">One cunning American, from his student years, had been
-                                    selling drugs, and now he came up with a scheme of illegal enrichment usin g the
-                                    estates of an impoverished English aristocracy and made a very good fortune on ...
+                                <p class="card__content__text">A meek Hobbit from the Shire and eight companions set out
+                                    on a dangerous journey to destroy the powerful One Ring and save Middle-earth from
+                                    the Dark Lord Sauron.
                                 </p>
                             </a>
                         </div>
@@ -129,25 +130,27 @@
                 </div>
             </div>
         </section>
-        <section class="window">
-            <video src="./video/video.mp4" autoplay muted></video>
+
+        <section id="black-widow" class="window">
+            <video src="./video/video.mp4" autoplay muted loop playsinline></video>
             <div class="window__content">
-                <div class="container">
-                    <img src="./img/301557494350211 3.png" alt="">
+                <div class="container window__container">
+                    <img class="window__logo" src="./img/301557494350211 3.png" alt="Black Widow Logo">
                     <p>After the events at the Leipzig-Halle airport, Natasha was overtaken by the mistakes of the past.
                         The Red Room again made itself felt - a program to create Widows - professional killers and
                         spies - just like her. Natasha decides once and for all to deal with people whose efforts she
                         herself became a Widow.</p>
-                    <a href="" class="window__btn btn">Watch now</a>
+                    <a href="#!" class="window__btn btn">Watch now</a>
                 </div>
             </div>
         </section>
-        <section class="collections">
+
+        <section id="collections" class="collections">
             <div class="container">
                 <h2 class="collections__title title">Collections</h2>
                 <div class="collections__cards">
                     <a href="#!" class="collections__card">
-                        <img src="./img/1_1RP9RobsLeCjQFBFt039Sw 1.png" alt="">
+                        <img src="./img/1_1RP9RobsLeCjQFBFt039Sw 1.png" alt="All Marvel Films">
                         <div class="collections__content">
                             <i class="fa-solid fa-play fa-3x"></i>
                             <h4>All Marvel Films</h4>
@@ -155,7 +158,7 @@
                     </a>
 
                     <a href="#!" class="collections__card">
-                        <img src="./img/1_1RP9RobsLeCjQFBFt039Sw 2.png" alt="">
+                        <img src="./img/1_1RP9RobsLeCjQFBFt039Sw 2.png" alt="Fast and the Furious">
                         <div class="collections__content">
                             <i class="fa-solid fa-play fa-3x"></i>
                             <h4>Fast and the Furious</h4>
@@ -163,7 +166,7 @@
                     </a>
 
                     <a href="#!" class="collections__card">
-                        <img src="./img/59eb32e9980e091060d66cf4790f36906ad8e8ae.jpg" alt="">
+                        <img src="./img/59eb32e9980e091060d66cf4790f36906ad8e8ae.jpg" alt="Star Wars">
                         <div class="collections__content">
                             <i class="fa-solid fa-play fa-3x"></i>
                             <h4>Star Wars</h4>
@@ -173,11 +176,11 @@
             </div>
         </section>
 
-        <section class="series">
+        <section id="series" class="series">
             <div class="container">
                 <h2 class="series__title title">Series</h2>
                 <div class="series__card-lg">
-                    <img src="./img/2a443f7ae21fd8bab3c8a7e000aa2115 1.png" alt="">
+                    <img src="./img/2a443f7ae21fd8bab3c8a7e000aa2115 1.png" alt="Game of Thrones">
                     <div class="series__card-lg-content">
                         <h3 class="series__content-title">Game of Thrones</h3>
                         <p class="series__content___text">The time of prosperity is drawing to a close, and the summer,
@@ -185,14 +188,14 @@
                             Kingdoms, the Iron Throne, a conspiracy is ripening, and during this difficult time, the
                             king decides to seek support from his youth friend Eddard Stark. In a world where everyone -
                             from the king to the mercenary - is eager for power, intrigues and is ready to stick a knife
-                            in the back, there is ...</p>
-                        <a href="" class="btn">Watch now</a>
+                            in the back, there is...</p>
+                        <a href="#!" class="btn">Watch now</a>
                     </div>
                 </div>
 
                 <div class="series__grid">
                     <a href="#!" class="series__item series__card series__card-md">
-                        <img class="series__image" src="./img/scale_1200 1.png" alt="">
+                        <img class="series__image" src="./img/scale_1200 1.png" alt="Wanda Vision">
                         <div class="series__card-content">
                             <i class="fa-solid fa-play fa-3x series__card-link"></i>
                             <h4 class="series__card-title">Wanda Vision</h4>
@@ -200,7 +203,7 @@
                     </a>
 
                     <a href="#!" class="series__item series__card series__card-sm">
-                        <img class="series__image" src="./img/download 1.png" alt="">
+                        <img class="series__image" src="./img/download 1.png" alt="The Flash">
                         <div class="series__card-content">
                             <i class="fa-solid fa-play fa-3x series__card-link"></i>
                             <h4 class="series__card-title">The Flash</h4>
@@ -208,7 +211,7 @@
                     </a>
 
                     <a href="#!" class="series__item series__card series__card-sm">
-                        <img class="series__image" src="./img/trailer_143 1.png" alt="">
+                        <img class="series__image" src="./img/trailer_143 1.png" alt="The Great">
                         <div class="series__card-content">
                             <i class="fa-solid fa-play fa-3x series__card-link"></i>
                             <h4 class="series__card-title">The Great</h4>
@@ -216,7 +219,8 @@
                     </a>
 
                     <a href="#!" class="series__item series__card series__card-sm">
-                        <img class="series__image" src="./img/gotem-4-sezon-2017-pic905-895x505-32510 1.png" alt="">
+                        <img class="series__image" src="./img/gotem-4-sezon-2017-pic905-895x505-32510 1.png"
+                            alt="GOTHAM">
                         <div class="series__card-content">
                             <i class="fa-solid fa-play fa-3x series__card-link"></i>
                             <h4 class="series__card-title">GOTHAM</h4>
@@ -224,10 +228,10 @@
                     </a>
 
                     <a href="#!" class="series__item series__card series__card-sm">
-                        <img class="series__image" src="./img/960x540 1.png" alt="">
+                        <img class="series__image" src="./img/960x540 1.png" alt="The Witcher">
                         <div class="series__card-content">
                             <i class="fa-solid fa-play fa-3x series__card-link"></i>
-                            <h4 class="series__card-title">The witcher</h4>
+                            <h4 class="series__card-title">The Witcher</h4>
                         </div>
                     </a>
 
@@ -235,32 +239,28 @@
             </div>
         </section>
     </main>
+
     <footer class="footer">
         <div class="container footer__container">
             <div class="footer__apps">
-                <a href="" class="footer__apps-link">
+                <a href="#!" class="footer__apps-link" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-google-play fa-3x"></i>
                     <div class="google__play">
                         <span>Get it on</span>
-                        <h5 class="footer__apps-title">Google play</h5>
+                        <h5 class="footer__apps-title">Google Play</h5>
                     </div>
                 </a>
-                <a href="" class="footer__apps-link">
+                <a href="#!" class="footer__apps-link" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-apple fa-3x"></i>
                     <div class="google__play">
-                        <span>Aviable on the</span>
+                        <span>Available on the</span>
                         <h5 class="footer__apps-title">App Store</h5>
                     </div>
                 </a>
             </div>
-            <p class="footer__text">© IT LIVE. В целях обучения 2023</p>
+            <p class="footer__text">© Vue Cinemas. All rights reserved.</p>
         </div>
     </footer>
-    <script>
-        const menuBtn = document.querySelector('.header-menu');
-        menuBtn.addEventListener('click', () => {
-            menuBtn.classList.toggle('collapsed');
-        });
-    </script>
 </body>
+
 </html>
